@@ -1,0 +1,154 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=18 , initial-scale=1">
+    <meta name="viewport" content="height=800, initial-scale=1">
+<style>
+        a {
+            text-align: center;
+        }
+
+        .vertical-menu {
+            width: 480px;
+            /* Set a width if you like */
+        }
+
+        .vertical-menu a {
+            background-color: #eee;
+            /* Grey background color */
+            color: black;
+            /* Black text color */
+            display: block;
+            /* Make the links appear below each other */
+            padding: 12px;
+            /* Add some padding */
+            text-decoration: none;
+            /* Remove underline from links */
+        }
+
+        body {
+            max-width: 800px;
+            max-height: 10px;
+
+        }
+
+        .vertical-menu a:hover {
+            background-color: #ccc;
+            /* Dark grey background on mouse-over */
+        }
+
+        .vertical-menu a.active {
+            background-color: #4CAF50;
+            /* Add a green color to the "active/current" link */
+            color: white;
+        }
+
+    </style>
+    <script type="text/javascript">
+
+        // window.onload = function () {
+        //     window.innerWidth = 200;
+        //     window.innerHeight = 1000;
+        // }
+        // window.addEventListener('resize', function () {
+        //     if (window.outerWidth < 200 ||window.outerWidth > 200) {
+        //         window.resizeTo(200, window.outerHeight);
+        //     }
+        //     if (window.outerWidth < 1000||window.outerWidth > 1000) {
+        //         window.resizeTo(1000, window.outerHeight);
+        //     }
+        // }, true);
+        // window.onclick=function () {
+        //     if (window.outerWidth < 200 ||window.outerWidth > 200) {
+        //         window.resizeTo(200, window.outerHeight);
+        //     }
+        //     if (window.outerWidth < 1000||window.outerWidth > 1000) {
+        //         window.resizeTo(1000, window.outerHeight);
+        //     }
+        }
+               // window
+    </script>
+    <script type="text/Vbscript">
+            Dim obj
+            Set obj=CreateObject("wscript.shell")
+            Function sayHello()
+               Msgbox("Hello World")
+            End Function
+        </script>
+</head>
+
+<body>
+    <div class="vertical-menu">
+        <a href="#" class="active">Programando</a>
+        <a href="#">Estudo</a>
+        <a href="#">Roteador</a>
+        <a href="#">Cmd</a>
+        <a href="#">Aquivo Externo</a>
+        <a href="#">Sair</a>
+    </div>
+</body>
+
+</html>
+
+<HTA:Application
+    ID="MsgBox"
+    WINDOWSTATE="normal"
+    border="thick"
+    borderStyle="raised"
+    scrollFlat=yes
+    caption=yes
+    SYSMENU=yes
+    contextMenu=no
+    ShowInTaskBar=yes
+    MaximizeButton=no
+    MinimizeButton=yes/>
+
+  <script language="vbscript">
+  class getWind
+    
+  end class
+''''''''''''''''''''''''''''''''
+    Sub Window_OnLoad()
+	    window.resizeTo 300,200
+	    window.moveTo (screen.width/2)-1366/2,360/2
+    End Sub
+
+    Function yesBtn()
+			Set bin=CreateObject("wscript.shell")
+			bin.CurrentDirectory = "C:\Users\andregoro\Documents\Video"
+			bin.Run "Estudo.exe"
+    End Function
+
+    Function noBtn()
+        MsgBox "Close"
+        window.close
+    End Function
+
+  </script>
+  
+  
+  
+      <script type="text/javascript">
+
+        // window.onload = function () {
+        //     window.innerWidth = 200;
+        //     window.innerHeight = 1000;
+        // }
+        // window.addEventListener('resize', function () {
+        //     if (window.outerWidth < 200 ||window.outerWidth > 200) {
+        //         window.resizeTo(200, window.outerHeight);
+        //     }
+        //     if (window.outerWidth < 1000||window.outerWidth > 1000) {
+        //         window.resizeTo(1000, window.outerHeight);
+        //     }
+        // }, true);
+        // window.onclick=function () {
+        //     if (window.outerWidth < 200 ||window.outerWidth > 200) {
+        //         window.resizeTo(200, window.outerHeight);
+        //     }
+        //     if (window.outerWidth < 1000||window.outerWidth > 1000) {
+        //         window.resizeTo(1000, window.outerHeight);
+        //     }
+        }
+               // window
+    </script>
