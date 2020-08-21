@@ -3,6 +3,11 @@
 <head>
     <meta name="viewport" content="width=18 , initial-scale=1">
     <meta name="viewport" content="height=800, initial-scale=1">
+    <HTA:APPLICATION
+    MAXIMIZEBUTTON="NO"
+    SCROLL="NO"
+    BORDER="DIALOG"
+/>
 <style>
         a {
             text-align: center;
@@ -45,12 +50,35 @@
 
     </style>
     <script type="text/Vbscript">
-            Dim obj
-            Set obj=CreateObject("wscript.shell")
-            Function sayHello()
-               Msgbox("Hello World")
-            End Function
-        </script>
+'			window.resizeTo(510, 400);
+	window.resizeTo 520, 320
+    Sub esc(Choice)
+		Select Case Choice
+		Case 1
+			Set bin=CreateObject("wscript.shell")
+			bin.CurrentDirectory = "C:\Users\andregoro\Documents\Video"
+			bin.Run "Estudo.exe"
+		Case 2
+			Set bin=CreateObject("wscript.shell")
+			bin.CurrentDirectory = "C:\Users\andregoro\Documents\GitHub\script\vbs"
+			bin.Run "roteador.vbs"
+		Case 3
+			Set bin=CreateObject("wscript.shell")
+		'	Set app=CreateObject("Shell.Application")
+			'app.BrowseForFolder(0, "Choose a file:", &H4000, "C:\")
+			bin.Run InputBox("comando:")
+		Case 5
+			Window.Close
+		End Select
+	End Sub 
+    </script>
+    <script type="text/javascript">
+    	function e(){
+var input = document.createElement("input");
+    input.setAttribute("type", "file");
+    		input.click();       
+    	}
+    </script>
 </head>
 <HTA:Application
     ID="MsgBox"
@@ -67,12 +95,14 @@
 <body>
     <div class="vertical-menu">
         <a href="#" class="active">Programando</a>
-        <a href="#">Estudo</a>
-        <a href="#">Roteador</a>
-        <a href="#">Cmd</a>
-        <a href="#">Aquivo Externo</a>
-        <a href="#">Sair</a>
+        <a href="#" id="Estudo" onclick="esc(1)">Estudo</a>
+        <a href="#" id="Roteador" onclick="esc(2)">Roteador</a>
+        <a href="#" id="Cmd" onclick="esc(3)">Cmd</a>
+        <a href="#" id="Aquivo">Aquivo Externo  <input type="file" name="myInputFile" id="myInputFile" style="display:none;" />
+</a>
+        <a href="#" id="Sair" onclick="esc(5)">Sair</a>
     </div>
+
 </body>
 
 </html>

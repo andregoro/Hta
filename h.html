@@ -27,13 +27,15 @@
         }
 
         body {
-            max-width: 800px;
+            max-width: 400px;
             max-height: 10px;
-
+            resize: none;
         }
 
         .vertical-menu a:hover {
             background-color: #ccc;
+            resize: none;
+
             /* Dark grey background on mouse-over */
         }
 
@@ -65,15 +67,11 @@
         //     if (window.outerWidth < 1000||window.outerWidth > 1000) {
         //         window.resizeTo(1000, window.outerHeight);
         //     }
-        }
+       // }
                // window
     </script>
-    <script type="text/Vbscript">
-            Dim obj
-            Set obj=CreateObject("wscript.shell")
-            Function sayHello()
-               Msgbox("Hello World")
-            End Function
+    <script type="text/javascript">
+  window.resizeTo(510, 400);
         </script>
 </head>
 
@@ -105,7 +103,7 @@
 
   <script language="vbscript">
   class getWind
-    
+
   end class
 ''''''''''''''''''''''''''''''''
     Sub Window_OnLoad()
@@ -125,9 +123,9 @@
     End Function
 
   </script>
-  
-  
-  
+
+
+
       <script type="text/javascript">
 
         // window.onload = function () {
