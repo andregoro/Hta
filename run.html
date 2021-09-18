@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            max-height: 100px;
+            max-width: 100px;
+            resize: none;
+        }
+    </style>
+</head>
+<HTA:Application ID="MsgBox" WINDOWSTATE="normal" border="thick" borderStyle="raised" scrollFlat=yes caption=yes
+    SYSMENU=yes contextMenu=no ShowInTaskBar=yes MaximizeButton=no MinimizeButton=yes />
+
+<script>
+    var shell = new ActiveXObject("wscript.shell");
+</script>
+
+<body>
+    <input type="email" name="" id="i">
+    <button>
+        run
+    </button>
+    <button>
+        clear
+    </button>
+</body>
+
+</html>
